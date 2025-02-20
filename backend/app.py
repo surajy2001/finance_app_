@@ -1,32 +1,24 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
+from home_route import home_page_bp
+
 
 app = Flask(__name__)
 
 
 CORS(app)
 
+app.register_blueprint(home_page_bp)
 
 # @app.route('/')
 # def home():
 #     return "home"
 
 
-# * Home Page *
-@app.route('/api/home', methods=['GET'])
-def users():
-    return jsonify(
-        {
-            'users': [
-                'This is the server home'
-            ]
-        }
-    )
-    
     
 # * Login Page *
 @app.route('/api/login')
-def users():
+def login():
     return jsonify(
         {
             'users': [
@@ -38,8 +30,8 @@ def users():
     
 
 # * Logout Page *
-@app.route('/api/login')
-def users():
+@app.route('/api/logout')
+def logout():
     return jsonify(
         {
             'users': [

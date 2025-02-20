@@ -10,7 +10,7 @@ function App() {
 
   const fetchAPI = async() => {
     const response = await axios.get('http://127.0.0.1:5000/api/home');
-    setArray(response.data.users);
+    setArray(response.data.home);
     //console.log(response.data.users);
   };
 
@@ -24,9 +24,9 @@ function App() {
       <div>
         <button>Login</button>
 
-        {array.map((user, index) => (
+        {array.map((home_text, index) => (
           <div key={index}>
-            <span>{user}</span>
+            <span>{home_text}</span>
             <br></br>
           </div>
           ))
