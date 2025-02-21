@@ -1,6 +1,6 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
-from home_route import home_page_bp
+from routes.home_route import home_page_bp
 
 
 app = Flask(__name__)

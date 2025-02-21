@@ -14,3 +14,5 @@ def home():
     )
     
     
+__all__ = ['home_page_bp']
+    
