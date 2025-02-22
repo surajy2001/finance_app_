@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 
@@ -22,7 +23,11 @@ function Homepage() {
     return (
         <>
         <div>
-            {/* <button>Login</button> */}
+            <nav>
+                <Link to='/register'>Register/Signup</Link>
+                <br></br>
+                <Link to='/login'>Login</Link>
+            </nav>
 
             {home_array.map((home_text, index) => (
             <div key={index}>
