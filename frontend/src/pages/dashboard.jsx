@@ -26,7 +26,8 @@ function Dashboard() {
     const SignOut = async () => {
         const {error} = await supabase.auth.signOut()
         if (error) throw error
-        navigate('/login')
+        // navigate('/login')
+        navigate('/home')
 
 
     }

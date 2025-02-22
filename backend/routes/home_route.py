@@ -3,7 +3,7 @@ from flask import jsonify, Blueprint
 home_page_bp = Blueprint('home', __name__)
 
 # * Home Page *
-@home_page_bp.route('/', methods=['GET'])
+@home_page_bp.route('/home', methods=['GET'])
 def home():
     return jsonify(
         {

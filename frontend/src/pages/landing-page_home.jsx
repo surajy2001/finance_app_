@@ -6,17 +6,17 @@ import axios from 'axios'
 
 
 function Homepage() {
-    const [home_array, set_Home_array] = useState([])
+    // const [home_array, set_Home_array] = useState([])
 
 
-    const homeAPI = async() => {
-        const response = await axios.get('http://127.0.0.1:5000/')
-        set_Home_array(response.data.home)
-    }
+    // const homeAPI = async() => {
+    //     const response = await axios.get('http://127.0.0.1:5000/')
+    //     set_Home_array(response.data.home)
+    // }
 
-    useEffect(() => {
-        homeAPI()
-    }, [])
+    // useEffect(() => {
+    //     homeAPI()
+    // }, [])
     
 
 
@@ -28,14 +28,15 @@ function Homepage() {
                 <br></br>
                 <Link to='/login'>Login</Link>
             </nav>
+            <span>Dashboard</span>
 
-            {home_array.map((home_text, index) => (
+            {/* {home_array.map((home_text, index) => (
             <div key={index}>
                 <span>{home_text}</span>
                 <br></br>
             </div>
             ))
-            }
+            } */}
 
         </div>
 
