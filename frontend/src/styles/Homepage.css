@@ -1,117 +1,127 @@
-/* Homepage.css */
+/* Global Settings */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #000; /* Black base */
+  color: #fff;            /* White text for contrast */
+}
 
-.homepage {
-    font-family: 'Helvetica Neue', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .homepage-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f7f7f7;
-  }
-  
-  .logo h1 {
-    margin: 0;
-    font-size: 2rem;
-    color: #1d3557;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    color: #457b9d;
-    font-weight: bold;
-  }
-  
-  .nav-link:hover {
-    color: #1d3557;
-  }
-  
-  .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #a8dadc, #f1faee);
-  }
-  
-  .hero-content {
-    max-width: 50%;
-  }
-  
-  .hero-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  
-  .cta-button {
-    background-color: #1d3557;
-    color: #f1faee;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
-  
-  .cta-button:hover {
-    background-color: #457b9d;
-  }
-  
-  .hero-image img {
-    max-width: 100%;
-    border-radius: 8px;
-  }
-  
-  .features {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #f7f7f7;
-  }
-  
-  .features h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .feature-items {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
-  
-  .feature {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    width: 280px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-  
-  .feature h4 {
-    margin-top: 0;
-    color: #1d3557;
-  }
-  
-  .homepage-footer {
-    padding: 20px;
-    text-align: center;
-    background-color: #1d3557;
-    color: #f1faee;
-  }
-  
+/* Header Styles */
+.homepage-header {
+  display: flex;
+  justify-content: space-between; /* Logo left, nav right */
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #000;
+  border-bottom: 2px solid #6a0dad; /* Purple border accent */
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #6a0dad; /* Purple for logo text */
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #30d5c8; /* Turquoise for nav links */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #6a0dad; /* Purple on hover */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #000, #333); /* Dark gradient */
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  background-color: #fff;
+  color: #000;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  border: 2px solid #6a0dad;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #6a0dad;
+  color: #fff;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Features Section */
+.features {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #111; /* Slightly lighter than pure black */
+  color: #fff;
+}
+
+.features h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6a0dad; /* Purple for headings */
+}
+
+.feature-items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.feature h4 {
+  margin-top: 0;
+  color: #30d5c8; /* Turquoise for feature titles */
+}
+
+/* Footer */
+.homepage-footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
