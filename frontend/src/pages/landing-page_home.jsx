@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react'
 // import { Link } from 'react-router-dom'
 import axios from 'axios'
 import '../styles/Homepage.css'
-import '../images/logo.jpg'
+import '/images/logo.png'
 
 
 
@@ -34,13 +34,19 @@ import '../images/logo.jpg'
 import { Link } from 'react-router-dom';
 // import './Homepage.css';  // Adjust path if you store this file in a different folder
 
+// import { Link } from 'react-router-dom';
+// import './Homepage.css'; // Adjust if you're placing the CSS file elsewhere
+
 function Homepage() {
   return (
     <div className="homepage">
       {/* Header */}
       <header className="homepage-header">
-        <div className="logo">
-          <h1>MON$NX</h1>
+        <div className="logo-container">
+          {/* Replace 'monnx-logo.png' with your actual logo filename/path */}
+          <img src="/images/logo.png" alt="MONNX Logo" className="logo-img" />
+          <h1>MONNX</h1>
+          <span className="tagline">Global Fintech</span>
         </div>
         <nav className="nav-links">
           <Link to="/register" className="nav-link">Sign Up</Link>
@@ -53,39 +59,47 @@ function Homepage() {
         <div className="hero-content">
           <h2>Empower Your Financial Future</h2>
           <p>
-            Experience a modern, intelligent financial platform that brings clarity,
-            control, and confidence to your budgeting, investing, and asset management.
+            Take control of your finances with our intelligent platform.
+            Budget, invest, and save confidently—right at your fingertips.
           </p>
           <Link to="/login" className="cta-button">Explore Dashboard</Link>
         </div>
         <div className="hero-image">
-          {/* Replace with your own hero image path */}
-          <img src="../images/logo.jpg" alt="Empowering Financial Future" />
+          {/* Replace with your own hero image */}
+          <img src="/images/hero-finance.jpg" alt="From Cents to Success, Your Future Funded" />
         </div>
       </section>
 
-      {/* Features Section (Optional) */}
+      {/* Features Section */}
       <section className="features">
-        <h3>What We Offer</h3>
+        {/* <h3>What We Offer</h3> */}
+        <h3>From Cents to Success, Your Future Funded!</h3>
         <div className="feature-items">
           <div className="feature">
             <h4>Smart Budgeting</h4>
-            <p>Plan and track your spending effortlessly with our innovative budgeting tools.</p>
+            <p>
+              Our advanced budgeting tools help you allocate funds effectively
+              and reach your financial goals.
+            </p>
           </div>
           <div className="feature">
-            <h4>Investment Analysis</h4>
-            <p>Get reliable, real-time insights into the stock market to make informed decisions.</p>
+            <h4>Real-Time Investment Insights</h4>
+            <p>
+              Track stocks, analyze market trends, and make data-driven decisions.
+            </p>
           </div>
           <div className="feature">
             <h4>Automated Savings</h4>
-            <p>Save intelligently while you invest, ensuring a secure future without the hassle.</p>
+            <p>
+              Save effortlessly while investing, ensuring a secure future without the hassle.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="homepage-footer">
-        <p>© {new Date().getFullYear()} MONNX. All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} MONNX Global Fintech. All Rights Reserved.</p>
       </footer>
     </div>
   );
@@ -94,4 +108,11 @@ function Homepage() {
 export default Homepage;
 
 
+
 // export default Homepage;
+
+
+
+
+
+

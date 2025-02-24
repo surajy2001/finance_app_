@@ -1,25 +1,53 @@
+/* Homepage.css */
+
 /* Global Settings */
+
 body {
   margin: 0;
   font-family: 'Helvetica Neue', sans-serif;
-  background-color: #000; /* Black base */
-  color: #fff;            /* White text for contrast */
+  background-color: #0F1F3D; /* Deep navy base color */
+  color: #fff;               /* White text for contrast */
+}
+
+/* Container for the entire homepage */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header Styles */
 .homepage-header {
   display: flex;
-  justify-content: space-between; /* Logo left, nav right */
+  justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: #000;
-  border-bottom: 2px solid #6a0dad; /* Purple border accent */
+  background-color: #0F1F3D;
+  border-bottom: 2px solid #4EA1F3; /* Bright blue border accent */
 }
 
-.logo h1 {
+/* Logo Container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 145px; /* Adjust as needed */
+  height: auto;
+}
+
+.logo-container h1 {
   margin: 0;
   font-size: 2rem;
-  color: #6a0dad; /* Purple for logo text */
+  color: #4EA1F3; /* Accent color for brand name */
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: #B0C4DE; /* Subtle lighter color for tagline */
+  margin-left: 5px;
 }
 
 .nav-links {
@@ -29,13 +57,13 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: #30d5c8; /* Turquoise for nav links */
+  color: #4EA1F3; /* bright accent color */
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #6a0dad; /* Purple on hover */
+  color: #fff; /* Invert on hover for emphasis */
 }
 
 /* Hero Section */
@@ -44,7 +72,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 60px 40px;
-  background: linear-gradient(135deg, #000, #333); /* Dark gradient */
+  background: linear-gradient(135deg, #0F1F3D, #1A2B58);
   color: #fff;
 }
 
@@ -64,19 +92,19 @@ body {
 
 /* Call-to-Action Button */
 .cta-button {
-  background-color: #fff;
-  color: #000;
+  background-color: #4EA1F3;
+  color: #0F1F3D;
   padding: 12px 24px;
   text-decoration: none;
   border-radius: 4px;
   font-size: 1rem;
-  border: 2px solid #6a0dad;
+  border: none;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #6a0dad;
-  color: #fff;
+  background-color: #fff;
+  color: #0F1F3D;
 }
 
 .hero-image img {
@@ -88,14 +116,14 @@ body {
 .features {
   padding: 40px 20px;
   text-align: center;
-  background-color: #111; /* Slightly lighter than pure black */
+  background-color: #0F1F3D;
   color: #fff;
 }
 
 .features h3 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #6a0dad; /* Purple for headings */
+  color: #4EA1F3; /* accent color for headings */
 }
 
 .feature-items {
@@ -106,7 +134,7 @@ body {
 }
 
 .feature {
-  background: #222;
+  background: #1A2B58; /* Slightly lighter than the base navy */
   padding: 20px;
   border-radius: 8px;
   width: 280px;
@@ -115,13 +143,15 @@ body {
 
 .feature h4 {
   margin-top: 0;
-  color: #30d5c8; /* Turquoise for feature titles */
+  color: #4EA1F3; /* bright accent color */
 }
 
 /* Footer */
 .homepage-footer {
+  margin-top: auto; /* pushes footer to bottom */
   padding: 20px;
   text-align: center;
-  background-color: #000;
+  background-color: #0F1F3D;
   color: #fff;
+  border-top: 2px solid #4EA1F3;
 }
