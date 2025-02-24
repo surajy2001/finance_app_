@@ -4,6 +4,7 @@ from routes.home_route import home_page_bp
 from routes.dashboard_route import dashboard_bp
 from routes.login_route import login_bp
 from routes.register_route import register_bp
+from routes.bank_signin import bank_login_bp
 
 
 
@@ -20,6 +21,7 @@ app.register_blueprint(home_page_bp)
 app.register_blueprint(dashboard_bp)
 app.register_blueprint(login_bp)
 app.register_blueprint(register_bp)
+app.register_blueprint(bank_login_bp)
 
 # @app.route('/')
 # def home():

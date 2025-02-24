@@ -6,6 +6,7 @@ import Homepage from './pages/landing-page_home'
 import Dashboard from './pages/dashboard'
 import Login from './pages/login'
 import Register from './pages/register'
+import Bank_signIn from './pages/bank_singin'
 
 
 function App() {
@@ -13,15 +14,10 @@ function App() {
     <BrowserRouter>
       <div>
                 {/* Navigation Links */}
-        <nav>
-          {/* <Link to="/">Home</Link> |  */}
-          {/* <Link to="/dashboard">Dashboard</Link> */}
-        </nav>
-
 
         <Routes>
           {/* Home Page (Landing page) */}
-          <Route path='/home' element={<Homepage />} />
+          <Route path='/' element={<Homepage />} />
 
         {/* Dashboard Page */}
           <Route path='/dashboard' element={<Dashboard />} />
@@ -32,7 +28,7 @@ function App() {
         {/* Sign Page */}
           <Route path='/register' element={<Register />} />
 
-          <Route />
+          <Route path='/user_ach_signin' element={<Bank_signIn />} />
 
           <Route />
 
