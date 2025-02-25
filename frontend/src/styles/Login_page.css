@@ -1,0 +1,197 @@
+:root {
+    /* Purple gradient background (deep purple) */
+    --purple-gradient: linear-gradient(135deg, #3f0166, #7b2cbf);
+  
+    /* Translucent card styles */
+    --card-bg: rgba(255, 255, 255, 0.2);  /* Increase or decrease alpha for more/less translucency */
+    --card-border: rgba(255, 255, 255, 0.3);
+  
+    /* Text Colors */
+    --text-color-dark: #fff; /* We'll use white text on the card for contrast */
+    --error-bg: #ffe6e6;
+  
+    /* Button & Accent Colors */
+    --button-gradient: linear-gradient(135deg, #9d3eb7, #c473e6);
+  }
+  
+  /* Container with a deep purple gradient background */
+  .login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--purple-gradient);
+    padding: 2rem;
+  }
+  
+  /* Translucent card with glassmorphism effect */
+  .login-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+    padding: 3rem;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    color: var(--text-color-dark);
+  }
+  
+  /* Header */
+  .login-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .login-logo {
+    height: 48px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .login-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-color-dark);
+  }
+  
+  .login-header p {
+    color: var(--text-color-dark);
+  }
+  
+  /* Error Message */
+  .error-message {
+    display: block;
+    background-color: var(--error-bg);
+    color: #d00;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Form Layout */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-group label {
+    font-weight: 500;
+    color: var(--text-color-dark);
+  }
+  
+  .form-group input {
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    border: 1px solid var(--card-border);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-color-dark);
+    font-size: 1rem;
+    transition: all 0.2s ease;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #fff;
+  }
+
+  .form-group input::placeholder {
+    color: rgb(174, 145, 208); /* or your desired color */
+  }
+  
+  .error-box {
+    display: block;
+    margin: 0 auto 1.5rem auto; /* centers horizontally, adds bottom margin */
+    text-align: center;
+    background-color: #573990; /* light red/pink background */
+    color: rgb(191, 180, 219);              /* red text */
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    max-width: 300px;         /* limit width so it doesn't stretch too wide */
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+
+
+
+  /* Options row: remember me + forgot password */
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color-dark);
+  }
+  
+  .forgot-password {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .forgot-password:hover {
+    color: #ddd;
+  }
+  
+  /* Sign In button with gradient background */
+  .login-button {
+    background: var(--button-gradient);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    box-shadow: 0 4px 20px rgba(121, 40, 202, 0.3);
+  }
+  
+  .login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(121, 40, 202, 0.3);
+  }
+  
+  /* Footer */
+  .login-footer {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .login-footer p {
+    color: var(--text-color-dark);
+    margin-bottom: 1rem;
+  }
+  
+  .login-footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .security-badges {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--text-color-dark);
+    font-size: 0.9rem;
+  }
+  
