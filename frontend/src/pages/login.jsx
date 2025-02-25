@@ -53,7 +53,7 @@ function LoginPage() {
         <div className="login-container">
             <div className="login-card">
                 <div className="login-header">
-                    <img src="/images/logo.png" alt="MONNX Logo" className="login-logo" />
+                    <img src="/images/login_logo.png" alt="MONNX Logo" className="login-logo" />
                     <h1>Welcome Back</h1>
                     <p>Access your AI-powered wealth management dashboard</p>
                 </div>

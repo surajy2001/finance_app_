@@ -132,7 +132,7 @@ function Homepage() {
           <div className="hp-logo">
             <img src="/images/logo.png" alt="MONNX Logo" className="hp-logo-img" />
             <div className="hp-brand-container">
-              <h1 className="hp-brand">MONNX</h1>
+              <h1 className="hp-brand">MonnX</h1>
               <span className="hp-tagline">Enterprise AI Finance</span>
             </div>
           </div>

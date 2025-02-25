@@ -59,7 +59,7 @@
 }
 
 .hp-logo-img {
-  height: 40px;
+  height: 90px;
   width: auto;
 }
 
@@ -70,7 +70,7 @@
 
 .hp-brand {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--primary-color);
   margin: 0;
 }
