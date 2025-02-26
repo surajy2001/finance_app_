@@ -130,7 +130,7 @@ function Homepage() {
       <header className="hp-header">
         <div>
           <div className="hp-logo">
-            <img src="/images/logo.png" alt="MONNX Logo" className="hp-logo-img" />
+            <img src="/images/logo.png" alt="MonnX Logo" className="hp-logo-img" />
             <div className="hp-brand-container">
               <h1 className="hp-brand">MonnX</h1>
               <span className="hp-tagline">Enterprise AI Finance</span>
@@ -312,7 +312,7 @@ function Homepage() {
         <h2>Trusted by Industry Leaders</h2>
         <div className="hp-testimonials">
           <div className="hp-testimonial">
-            <p>"MONNX is revolutionizing personal finance with their AI-driven approach."</p>
+            <p>"MonnX is revolutionizing personal finance with their AI-driven approach."</p>
             <cite>- Forbes</cite>
           </div>
           <div className="hp-testimonial">
@@ -330,7 +330,7 @@ function Homepage() {
       <footer className="hp-footer">
         <div className="hp-footer-grid">
           <div className="hp-footer-brand">
-            <h3>MONNX</h3>
+            <h3>MonnX</h3>
             <p>Enterprise-grade financial intelligence powered by advanced AI technology.</p>
             <div className="hp-stats">
               <div className="hp-stat">
@@ -370,7 +370,7 @@ function Homepage() {
 
         <div className="hp-footer-bottom">
           <div className="hp-legal">
-            <span>© {new Date().getFullYear()} MONNX AI Technologies, Inc.</span>
+            <span>© {new Date().getFullYear()} MonnX AI Technologies, Inc.</span>
             <Link to="/privacy">Privacy</Link>
             <Link to="/terms">Terms</Link>
             <Link to="/security">Security</Link>

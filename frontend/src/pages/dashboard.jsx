@@ -38,6 +38,15 @@ function Dashboard() {
     return(
         <>
         <div>
+            
+
+
+
+
+
+
+
+
             <h2>Hi, this is your app Home Screen/Dashboard</h2>
             <button onClick={SignOut}>Signout</button>
             <br></br>
